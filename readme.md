@@ -12,4 +12,6 @@ En este repositorio estaré subiendo mis soluciones a las actividades y desafío
 ##### Desafíos
 
 - [1 - Introducción al Desarrollo Web](/actividades/01-introduccion-al-desarrollo-web/)
-  - [1.1 - Mi Curriculum Vitae en HTML](/desafios/01-introduccion-al-desarrollo-web/01-mi-curriculum-vitae/)
+  - 1.1 - Mi Curriculum Vitae en HTML
+    - [Código](/desafios/01-introduccion-al-desarrollo-web/01-mi-curriculum-vitae/)
+    - [Página en vivo](https://adl-mi-cv.netlify.app/)

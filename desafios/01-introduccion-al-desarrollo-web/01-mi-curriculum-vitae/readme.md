@@ -1,6 +1,6 @@
 # Solución al Desafío 1 - Mi Curriculum Vitae en HTML
 
-![banner](./01-mi-curriculum-vitae/assets/images/og_image.jpg)
+![banner](assets/images/og_image.jpg)
 
 ## Descripción
 
@@ -18,4 +18,4 @@ Construir un currículum vitae y un portafolio utilizando HTML.
 
 ## Enlace en vivo
 
-Enlace por determinar.
+[Enlace en vivo](https://adl-mi-cv.netlify.app/)
