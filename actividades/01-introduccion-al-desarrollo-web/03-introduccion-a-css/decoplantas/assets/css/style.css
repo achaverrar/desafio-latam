@@ -1,0 +1,54 @@
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 10em;
+  padding: 5em;
+  font-size: 2em;
+  background-image: url(../imgs/blossomed-cactus.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.header__title {
+  margin: 0;
+  font-weight: 400;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  flex: 1;
+}
+
+.product__image-container,
+.product__text {
+  width: 50%;
+  padding: 2em;
+}
+
+.product__image {
+  width: 100%;
+  border: solid 1px #dddddd;
+}
+
+.footer {
+  height: 3em;
+  text-align: center;
+  background-color: #b97029;
+}
+
+.footer__text {
+  margin: 0;
+}
+
+.footer__link {
+  line-height: 3em;
+  color: #ffffff;
+  font-weight: 900;
+  text-decoration: none;
+}
