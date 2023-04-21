@@ -18,4 +18,4 @@ En este repositorio estaré subiendo mis soluciones a las actividades y desafío
     - [Página en vivo](https://adl-mi-cv.netlify.app/)
   - 1.2 - Construyendo un landing page
     - [Código](/desafios/01-introduccion-al-desarrollo-web/02-construyendo-un-landing-page/)
-    - Página en vivo (Link por determinar)
+    - [Página en vivo](https://adl-landing-page.netlify.app/)
