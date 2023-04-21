@@ -1,0 +1,270 @@
+/*
+
+TABLE OF CONTENTS
+  1. Font Imports
+  2. Global Variables and Styles
+  3. Typography
+  4. Header
+  5. Specials
+  6. Footer
+
+*/
+
+/* ############ 1. Font Imports ############ */
+/* Markazi Text */
+@import url("https://fonts.googleapis.com/css2?family=Markazi+Text:wght@400;500&display=swap");
+/* Karla */
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700;800&display=swap");
+
+/* ############ 2. Global Variables and Styles ############ */
+:root {
+  /* Colors */
+  --color-primary-1: #495e57;
+  --color-primary-2: #f4ce14;
+  --color-secondary-1: #ee9972;
+  --color-secondary-2: #fbdabb;
+  --color-highlight-1: #edefee;
+  --color-highlight-2: #333333;
+  --color-white: #ffffff;
+  /* Fonts */
+  --font-heading: "Markazi Text", serif;
+  --font-text: "Karla", sans-serif;
+  /* Border radius */
+  --border-radius-1: 16px;
+  --border-radius-2: 8px;
+  /* Spacing */
+  --spacing-base: 0.8rem;
+  --padding-section: 4rem 2.4rem 8rem 2.4rem;
+  /* Widths */
+  --full-width: 85.8rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: var(--color-primary-2);
+  color: var(--color-highlight-2);
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--font-text);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+}
+
+p a {
+  display: inline;
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--full-width);
+  margin: auto;
+}
+
+/* ############ 3. Typography ############ */
+.font-display-title {
+  font-family: var(--font-heading);
+  font-size: 6.4rem;
+  font-weight: 500;
+}
+
+.font-subtitle {
+  font-family: var(--font-heading);
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.font-lead-text {
+  font-family: var(--font-text);
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.font-section-title {
+  font-family: var(--font-text);
+  font-size: 2rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.font-section-categories {
+  font-family: var(--font-text);
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-transform: capitalize;
+}
+
+.font-card-title {
+  font-family: var(--font-text);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.font-paragraph-text {
+  font-family: var(--font-text);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  max-width: 65ch;
+}
+
+.font-highlight-text {
+  font-family: var(--font-text);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+/* ############ 4. Header ############ */
+.header {
+  padding: var(--padding-section);
+  background: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 0, 0.9) 15%,
+      rgba(0, 0, 0, 0)
+    ),
+    url(../imgs/mediterranean-food.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.header__title {
+  color: var(--color-primary-2);
+  line-height: 0.7em;
+}
+
+.header__subtitle {
+  margin-top: 0;
+  color: var(--color-highlight-1);
+}
+
+.header__paragraph {
+  margin-top: 2rem;
+  max-width: 35ch;
+  color: var(--color-highlight-1);
+}
+
+.button {
+  background-color: var(--color-primary-2);
+  width: fit-content;
+  padding: 0.75em 1.25em;
+  margin-top: 4rem;
+  border-radius: var(--border-radius-1);
+}
+
+/* ############ 5. Specials ############ */
+.specials-section {
+  padding: var(--padding-section);
+}
+
+.specials {
+  margin-top: 2rem;
+  border-collapse: separate;
+  border-spacing: 0 2em;
+}
+
+.special {
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+  /* rgb(240 240 240 / 69%) 2px 9px 20px 0px */
+}
+
+.special__text {
+  padding: 1.5em;
+  color: var(--color-primary-1);
+}
+
+.special__title {
+  color: var(--color-highlight-2);
+}
+
+.special__description {
+  margin-top: 1em;
+}
+
+.special__price {
+  display: block;
+  margin-top: 0.5em;
+}
+
+.special__image {
+  height: 28rem;
+  object-fit: cover;
+  object-position: center;
+  border-top-left-radius: var(--border-radius-1);
+  border-bottom-left-radius: var(--border-radius-1);
+}
+
+/* ############ 6. Footer ############ */
+.footer {
+  padding: 4rem 2.4rem;
+  text-align: left;
+  width: 100%;
+  background-color: var(--color-primary-1);
+  color: var(--color-white);
+}
+
+.footer__logo-container {
+  height: 20rem;
+  display: inline-block;
+  margin-right: 4rem;
+  margin-bottom: 1em;
+}
+
+.footer__logo {
+  height: 100%;
+}
+
+.footer__text {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer__paragraph {
+  margin: auto;
+}
+
+.footer__link {
+  color: var(--color-primary-2);
+}
