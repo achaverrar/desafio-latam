@@ -1,0 +1,29 @@
+body,
+menu {
+  padding: 0px;
+  margin: 0px;
+}
+
+menu ul {
+  margin: 0px;
+}
+
+menu {
+  background-color: black;
+  color: white;
+  line-height: 50px;
+}
+
+menu li {
+  display: inline-block;
+  margin-right: 50px;
+}
+
+menu a {
+  color: white;
+  text-decoration: none;
+}
+
+menu a:hover {
+  color: goldenrod;
+}
