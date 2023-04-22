@@ -1,0 +1,141 @@
+/* ############ 1. Importa la fuente externa ############ */
+/* Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+/* ############ 2. Reset ############ */
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  /* Hace que 1rem = 10px */
+  font-size: 62.5%;
+  font-family: "Poppins";
+}
+
+.gallery {
+  display: flex;
+  /* Ubica el título arriba de la galería  */
+  flex-direction: column;
+  /* Centran el contenido en la página */
+  align-items: center;
+  justify-content: center;
+  /*
+    Siempre se considera todo el espacio vertical disponible
+    así el contenido sea menor
+  */
+  min-height: 100vh;
+  /* Define el espacio entre el título y las fotos */
+  gap: 1.6em;
+  /* Como mínimo siempre habrán 2.4rem entre el contenido y 
+  los límites de la página */
+  padding: 2.4rem;
+}
+
+.gallery__heading {
+  font-size: 3.2rem;
+  font-weight: 400;
+  color: #222222;
+}
+
+.gallery__heading-bold {
+  font-weight: 700;
+}
+
+.gallery__items {
+  display: flex;
+  /* Ocupa todo el espacio vertical del contenedor que 
+  no ocupe el título */
+  flex: 1;
+  /* Ocupa todo el ancho de pantalla que pueda
+  siempre y cuando no se pase de 104rem (aprox. 1040px) */
+  width: 100%;
+  max-width: 104rem;
+  /* Define el espacio entre las imágenes */
+  gap: 1.6em;
+}
+
+.gallery__item-1 {
+  background: url(../imgs/dessert.jpg);
+}
+
+.gallery__item-2 {
+  background: url(../imgs/forest.jpg);
+}
+
+.gallery__item-3 {
+  background: url(../imgs/star-trail.jpg);
+}
+
+.gallery__item {
+  /* Le da a todas las imágenes de la galería 
+  el mismo ancho por defecto */
+  flex: 1;
+  /* Alinea el texto al final del contenedor*/
+  display: flex;
+  align-items: end;
+  /* Hace que las imágenes de fondo rellenen todo 
+  el contenedor, aunque no se vean completas*/
+  background-size: cover;
+  /* Hace que las imágenes de fondo no se repitan para 
+  llenar el contenedor si no son lo suficientemente grandes*/
+  background-repeat: no-repeat;
+  /* Le baja el brillo a la imagen de fondo al 70%*/
+  filter: brightness(0.7);
+  /* Recorta los bordes del contenedor y 
+  oculta los pedazos de imagen de fondo que sobran */
+  border-radius: 16px;
+  overflow: hidden;
+  /* Anima la transición entre los estados de flex y filter
+  entre el momento en que el cursor pasa por encima de la imagen
+  y cuando se quita */
+  transition: flex 300ms ease-in-out, filter 300ms ease-in-out;
+}
+
+/* Estado cuando el cursor pasa por encima de la imagen */
+.gallery__item:hover,
+.gallery__item:active {
+  /* Este valor fue escogido de forma arbitraria */
+  flex: 6;
+  /* Este es el nivel de brillo original de la imagen */
+  filter: brightness(1);
+}
+
+.gallery__item-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.6rem;
+  color: #eeeeee;
+  /* El fondo tiene un gradiente de 
+  negro (abajo) a transparente (arriba) */
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  /* Le devuelve el ancho 100% que pierde porque 
+  el flex contenedor (.gallery__items) tiene flex-direction: row
+  */
+  width: 100%;
+  /* Oculta el texto */
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  /* Definiendo el posicionamiento del texto desde el estado inicial
+  optimiza la transición */
+  display: flex;
+  align-items: center;
+  padding-left: 1.25em;
+  /* Anima el cambio de estado entre el paso del cursor por encima y
+  cuando se posa por fuera de la imagen*/
+  transition: all 250ms ease-in-out;
+}
+
+.gallery__item:hover .gallery__item-text,
+.gallery__item:active .gallery__item-text {
+  /* Hace que el texto "se desplace hacia arriba" */
+  /* (Valor escogido de forma arbitraria) */
+  height: 4em;
+  /* Le devuelve la visibilidad al texto */
+  opacity: 1;
+}
