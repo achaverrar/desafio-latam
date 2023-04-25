@@ -1,0 +1,230 @@
+/*
+
+TABLE OF CONTENTS
+  1. Font Imports
+  2. Global Variables and Styles
+  3. Header
+  4. Description Section
+  5. Features Section
+  6. Gallery Section
+  7. Footer
+
+*/
+
+/* ############ 1. Font Imports ############ */
+/* Raleway */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap");
+
+/* ############ 2. Global Variables and Styles ############ */
+:root {
+  /* Colors */
+  --color-primary: #000000;
+  --color-secondary: #ffffff;
+  --color-tertiary: #1e1a13;
+  /* Fonts */
+  --font-family-default: "Raleway", sans-serif;
+  /* Widths */
+  --full-width: 98rem;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::selection {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: var(--font-family-default);
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+main {
+  flex: 1;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--full-width);
+  margin: auto;
+}
+
+/* ############ 3. Header ############ */
+.header__title {
+  text-align: center;
+  padding: 0.7rem 0;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+/* ############ 4. Description Section ############ */
+.description-section {
+  padding: 4.5rem 4rem 6.6rem 4rem;
+}
+
+.container--description {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 7.5rem;
+}
+
+.description__text {
+  flex: 1;
+  min-width: min(36rem, 100%);
+  font-weight: 300;
+}
+
+.description__text > * + * {
+  margin-top: 1.5em;
+}
+
+.description__image {
+  flex: 1;
+  min-width: 35%;
+}
+
+/* ############ 5. Features Section ############ */
+.features-section {
+  padding: 7.5rem 4rem;
+  background-color: var(--color-tertiary);
+  text-align: center;
+}
+
+.features__title {
+  font-size: 4rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  word-break: break-all;
+}
+
+.features__items {
+  margin-top: 5rem;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  gap: 4em;
+  flex-wrap: wrap;
+}
+
+.features__item:nth-of-type(2) {
+  transform: translateX(4ch);
+}
+
+.features__item-icon {
+  height: 5rem;
+  position: relative;
+}
+
+.icon__svg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  transition: all 250ms ease-in-out;
+}
+
+.icon__svg--eye-closed,
+.icon__svg--paint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  fill-opacity: 0;
+  transition: all 250ms ease-in-out;
+}
+
+.features__item-icon:hover .icon__svg--eye-open,
+.features__item-icon:hover .icon__svg--paint {
+  fill-opacity: 0;
+}
+.features__item-icon:hover .icon__svg--eye-closed {
+  fill-opacity: 1;
+}
+.features__item-icon:hover .icon__svg--paint {
+  fill-opacity: 0.8;
+  transform: scale(1.1) translate(-1px, -1px);
+}
+
+.features__item-icon:hover .icon__svg--peace {
+  transform: scale(1.1);
+}
+
+.features__item-text {
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+
+/* ############ 6. Gallery Section ############ */
+.gallery-section {
+  padding: 7.5rem 4rem;
+}
+
+.container--gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 1em;
+}
+
+.gallery__item {
+  flex: 1;
+  min-width: 24rem;
+  overflow: hidden;
+}
+
+.gallery__item-image {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.7);
+  transition: transform 250ms ease-in-out, filter 250ms ease-in-out;
+}
+
+.gallery__item:hover .gallery__item-image {
+  filter: brightness(1);
+  transform: scale(1.1);
+}
+
+/* ############ 6. Footer ############ */
+.footer {
+  background-color: var(--color-tertiary);
+  padding: 4rem;
+}
+
+.footer__text {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.footer__link {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+}
