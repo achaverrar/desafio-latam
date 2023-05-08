@@ -1,0 +1,42 @@
+/*
+
+TABLE OF CONTENTS
+  1. Global Variables and Styles
+  2. Header
+  3. Description Section
+  4. Features Section
+  5. Gallery Section
+  6. Footer
+
+*/
+
+/* ############ 1. Global Variables and Styles ############ */
+:root {
+  /* Colors */
+  --success: #28a745;
+  --gray: #707070;
+  --dark-gray: #212529;
+  --white: #ffffff;
+  --light: #f8f9fa;
+  /* Fonts */
+  --font-family-default: "Roboto", sans-serif;
+}
+
+::selection {
+  background-color: var(--success);
+  color: var(--white);
+}
+
+body {
+  font-family: var(--font-family-default);
+  font-weight: 300;
+  color: var(--gray);
+}
+
+.card-title {
+  color: var(--dark-gray);
+}
+
+.card-footer {
+  background-color: inherit;
+}
