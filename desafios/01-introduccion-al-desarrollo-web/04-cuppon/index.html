@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/favicon/favicon.ico"
+      type="image/x-icon"
+    />
+    <meta name="author" content="Ayxa Chaverra Rentería" />
+    <meta name="language" content="spanish" />
+    <meta
+      name="description"
+      content="Solución al cuarto desafío de la carrera Fullstack con JavaScript de Desafío Latam"
+    />
+    <meta name="og:title" content="Iguanas" />
+    <meta
+      name="og:description"
+      content="Solución al cuarto desafío de la carrera Fullstack con JavaScript de Desafío Latam"
+    />
+    <meta name="og:image" content="./assets/imgs/og-image.jpg" />
     <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap"
@@ -21,16 +38,18 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Cuppon</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-success navbar-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./assets/imgs/logo-white.png"
-            alt="Logo de Cuppon"
-            height="25"
-          />
-        </a>
+  <body class="fw-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+      <div class="container-fluid px-4">
+        <h1 class="m-0 fs-6">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./assets/imgs/logo-white.png"
+              alt="Logo de Cuppon"
+              height="25"
+            />
+          </a>
+        </h1>
         <button
           class="navbar-toggler"
           type="button"
@@ -45,208 +64,248 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav fw-bold ms-auto text-center">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Features</a>
+              <a class="nav-link" href="#">Características</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Pricing</a>
+              <a class="nav-link" href="#">Precios</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+              <a class="nav-link disabled">Desactivado</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="container-fluid p-4">
-      <div class="row gx-3 gy-2 row-cols-1 row-cols-md-3">
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="./assets/imgs/plumon-coral-fleece.jpg"
-              class="card-img-top h-100"
-              alt="..."
-            />
-            <div
-              class="card-body h-50 d-flex flex-column justify-content-between"
-            >
-              <h2 class="card-title fw-light fs-5 mb-3">
-                Plumón Coral Fleece estampado en modelo y tamaño a elección
-              </h2>
-              <div class="card-text">
-                <p class="mb-0">Plumones Manolino</p>
-                <address class="d-flex flex-row gap-1 align-items-center mb-0">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i> 9191
-                  Avenida Vitacura, Chile
-                </address>
-              </div>
-            </div>
-            <div class="card-footer mx-3">
-              <p
-                class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
+    <main>
+      <section class="container-fluid p-4">
+        <div class="row gx-3 gy-3 row-cols-1 row-cols-md-3">
+          <div class="col">
+            <article class="card h-100">
+              <img
+                src="./assets/imgs/plumon-coral-fleece.jpg"
+                class="card-img-top h-100"
+                alt="Habitación con cama blanca"
+              />
+              <div
+                class="card-body h-50 d-flex flex-column justify-content-between"
               >
-                <span>$45.990</span>
-                <span class="text-success fw-bold fs-5">$22.990</span>
-              </p>
-            </div>
+                <h2 class="text-dark fw-light fs-5 mb-3">
+                  Plumón Coral Fleece estampado en modelo y tamaño a elección
+                </h2>
+                <div class="card-text">
+                  <p class="mb-0">Plumones Manolino</p>
+                  <address
+                    class="d-flex flex-row gap-1 align-items-center mb-0"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 9191
+                    Avenida Vitacura, Chile
+                  </address>
+                </div>
+              </div>
+              <div class="card-footer mx-3">
+                <p
+                  class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
+                >
+                  <span>$45.990</span>
+                  <span class="text-success fw-bold fs-5">$22.990</span>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <img
+                src="./assets/imgs/plato-comida-vegana.jpg"
+                class="card-img-top h-100"
+                alt="Plato de comida vegana"
+              />
+              <div
+                class="card-body h-50 d-flex flex-column justify-content-between"
+              >
+                <h2 class="card-title fw-light fs-5 mb-3">
+                  Entrada para compartir + platos de fondo + postres +
+                  bebestibles
+                </h2>
+                <div class="card-text">
+                  <p class="mb-0">V for Vegan</p>
+                  <address
+                    class="d-flex flex-row gap-1 align-items-center mb-0"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 777
+                    Jesse Pinkman, Chile
+                  </address>
+                </div>
+              </div>
+              <div class="card-footer mx-3">
+                <p
+                  class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
+                >
+                  <span>$30.990</span>
+                  <span class="text-success fw-bold fs-5">$12.990</span>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <img
+                src="./assets/imgs/silla-clinica-dental.jpg"
+                class="card-img-top h-100"
+                alt="Silla en consultorio odontológico"
+              />
+              <div
+                class="card-body h-50 d-flex flex-column justify-content-between"
+              >
+                <h2 class="card-title fw-light fs-5 mb-3">
+                  Evaluación integral + blanqueamiento dental led + limpieza +
+                  fluoración
+                </h2>
+                <div class="card-text">
+                  <p class="mb-0">Clínica Dental Quijada</p>
+                  <address
+                    class="d-flex flex-row gap-1 align-items-center mb-0"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 1342,
+                    Blanco Encalada, Chile
+                  </address>
+                </div>
+              </div>
+              <div class="card-footer mx-3">
+                <p
+                  class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
+                >
+                  <span>$300.000</span>
+                  <span class="text-success fw-bold fs-5">$25.990</span>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <img
+                src="./assets/imgs/charquicán.jpeg"
+                class="card-img-top h-100"
+                alt="Plato de Charquicán"
+              />
+              <div
+                class="card-body h-50 d-flex flex-column justify-content-between"
+              >
+                <h2 class="card-title fw-light fs-5 mb-3">
+                  Colación para 2 personas + postre (no incluye bebidas)
+                </h2>
+                <div class="card-text">
+                  <p class="mb-0">Suricata almacen</p>
+                  <address
+                    class="d-flex flex-row gap-1 align-items-center mb-0"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 1071
+                    Miguel Claro, Chile
+                  </address>
+                </div>
+              </div>
+              <div class="card-footer mx-3">
+                <p
+                  class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
+                >
+                  <span>$4.200</span>
+                  <span class="text-success fw-bold fs-5">$2.100</span>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <img
+                src="./assets/imgs/rio-grande-valley.jpg"
+                class="card-img-top h-100"
+                alt="Festival en el Valle de Río Grande"
+              />
+              <div
+                class="card-body h-50 d-flex flex-column justify-content-between"
+              >
+                <h2 class="card-title fw-light fs-5 mb-3">
+                  1, 2 o 4 tickets para Stukids. Elige sucursal
+                </h2>
+                <div class="card-text">
+                  <p class="mb-0">Stukids Centro de Eventos</p>
+                  <address
+                    class="d-flex flex-row gap-1 align-items-center mb-0"
+                  >
+                    <i class="fa fa-map-marker" aria-hidden="true"></i> 133 El
+                    tranque, Chile
+                  </address>
+                </div>
+              </div>
+              <div class="card-footer mx-3">
+                <p
+                  class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
+                >
+                  <span>$4.000</span>
+                  <span class="text-success fw-bold fs-5">$2.500</span>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="card h-100">
+              <img
+                src="./assets/imgs/san-pedro-de-atacama.jpg"
+                class="card-img-top h-100"
+                alt="Flamenco en San Pedro de Atacama"
+              />
+              <div
+                class="card-body h-50 d-flex flex-column justify-content-between"
+              >
+                <h2 class="card-title fw-light fs-5 mb-3">
+                  San Pedro de Atacama: 1 o 2 noches en alojamiento a elección
+                </h2>
+                <div class="card-text">
+                  <p class="mb-0">D-Latam Travel</p>
+                </div>
+              </div>
+              <div class="card-footer mx-3">
+                <p
+                  class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
+                >
+                  <span>$80.200</span>
+                  <span class="text-success fw-bold fs-5">$44.100</span>
+                </p>
+              </div>
+            </article>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="./assets/imgs/plato-comida-vegana.jpg"
-              class="card-img-top h-100"
-              alt="..."
-            />
-            <div
-              class="card-body h-50 d-flex flex-column justify-content-between"
-            >
-              <h2 class="card-title fw-light fs-5 mb-3">
-                Entrada para compartir + platos de fondo + postres + bebestibles
-              </h2>
-              <div class="card-text">
-                <p class="mb-0">V for Vegan</p>
-                <address class="d-flex flex-row gap-1 align-items-center mb-0">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i> 777 Jesse
-                  Pinkman, Chile
-                </address>
-              </div>
-            </div>
-            <div class="card-footer mx-3">
-              <p
-                class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
-              >
-                <span>$30.990</span>
-                <span class="text-success fw-bold fs-5">$12.990</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="./assets/imgs/silla-clinica-dental.jpg"
-              class="card-img-top h-100"
-              alt="..."
-            />
-            <div
-              class="card-body h-50 d-flex flex-column justify-content-between"
-            >
-              <h2 class="card-title fw-light fs-5 mb-3">
-                Evaluación integral + blanqueamiento dental led + limpieza +
-                fluoración
-              </h2>
-              <div class="card-text">
-                <p class="mb-0">Clínica Dental Quijada</p>
-                <address class="d-flex flex-row gap-1 align-items-center mb-0">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i> 1342,
-                  Blanco Encalada, Chile
-                </address>
-              </div>
-            </div>
-            <div class="card-footer mx-3">
-              <p
-                class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
-              >
-                <span>$300.000</span>
-                <span class="text-success fw-bold fs-5">$25.990</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="./assets/imgs/charquicán.jpeg"
-              class="card-img-top h-100"
-              alt="..."
-            />
-            <div
-              class="card-body h-50 d-flex flex-column justify-content-between"
-            >
-              <h2 class="card-title fw-light fs-5 mb-3">
-                Colación para 2 personas + postre (no incluye bebidas)
-              </h2>
-              <div class="card-text">
-                <p class="mb-0">Suricata almacen</p>
-                <address class="d-flex flex-row gap-1 align-items-center mb-0">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i> 1071
-                  Miguel Claro, Chile
-                </address>
-              </div>
-            </div>
-            <div class="card-footer mx-3">
-              <p
-                class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
-              >
-                <span>$4.200</span>
-                <span class="text-success fw-bold fs-5">$2.100</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="./assets/imgs/rio-grande-valley.jpg"
-              class="card-img-top h-100"
-              alt="..."
-            />
-            <div
-              class="card-body h-50 d-flex flex-column justify-content-between"
-            >
-              <h2 class="card-title fw-light fs-5 mb-3">
-                1, 2 o 4 tickets para Stukids. Elige sucursal
-              </h2>
-              <div class="card-text">
-                <p class="mb-0">Stukids Centro de Eventos</p>
-                <address class="d-flex flex-row gap-1 align-items-center mb-0">
-                  <i class="fa fa-map-marker" aria-hidden="true"></i> 133 El
-                  tranque, Chile
-                </address>
-              </div>
-            </div>
-            <div class="card-footer mx-3">
-              <p
-                class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
-              >
-                <span>$4.000</span>
-                <span class="text-success fw-bold fs-5">$2.500</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100">
-            <img
-              src="./assets/imgs/san-pedro-de-atacama.jpg"
-              class="card-img-top h-100"
-              alt="..."
-            />
-            <div
-              class="card-body h-50 d-flex flex-column justify-content-between"
-            >
-              <h2 class="card-title fw-light fs-5 mb-3">
-                San Pedro de Atacama : 1 o 2 noches en alojamiento a elección
-              </h2>
-              <div class="card-text">
-                <p class="mb-0">D-Latam Travel</p>
-              </div>
-            </div>
-            <div class="card-footer mx-3">
-              <p
-                class="m-0 d-flex flex-row align-items-center gap-2 justify-content-end"
-              >
-                <span>$80.200</span>
-                <span class="text-success fw-bold fs-5">$44.100</span>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+      </section>
+      <section class="container-fluid p-4 text-bg-success">
+        <form class="text-center d-flex flex-column gap-3">
+          <h2 class="fs-5 mb-0">Recibe cupones en tu correo</h2>
+          <input
+            type="text"
+            class="form-control fw-light"
+            placeholder="Nombre"
+          />
+          <input
+            type="email"
+            class="form-control fw-light"
+            placeholder="Correo Electrónico"
+            aria-describedby="emailHelp"
+          />
+          <button type="submit" class="btn btn-light align-self-center">
+            Enviar
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer class="container-fluid p-4 d-flex flex-column align-items-center">
+      <img
+        src="./assets/imgs/logo-black.png"
+        alt="Logo de Cuppon"
+        height="24"
+      />
+      <small>&copy; 2018 Cuppon Latam .Todos los derechos reservados.</small>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
