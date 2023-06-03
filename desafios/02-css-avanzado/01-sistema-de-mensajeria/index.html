@@ -37,5 +37,48 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Contact Me</title>
   </head>
-  <body></body>
+  <body>
+    <aside class="contacts">
+      <section class="contacts__header">
+        <div class="current-user">
+          <div class="current-user__image">Image</div>
+          <div class="current-user__text">
+            <p class="current-user__name">Name</p>
+            <span class="current-user__status">Status</span>
+          </div>
+        </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <button class="menu__button">
+              <i class="fa-regular fa-message menu__icon"></i>
+            </button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__button">
+              <i class="fa-solid fa-bars menu__icon"></i>
+            </button>
+          </li>
+        </ul>
+      </section>
+      <section class="contacts__new-chat">
+        <button class="button--primary">Nuevo Chat</button>
+      </section>
+      <section class="contacts__chats">
+        <ul class="chats">
+          <li class="chat-container">
+            <div class="chat__image">Image</div>
+            <div class="chat__text">
+              <p class="chat__name">Name</p>
+              <span class="chat__message">Message</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </aside>
+    <main class="main">
+      <div class="main__image">Image</div>
+      <h1 class="main__title">Title</h1>
+      <p class="main__description">Text</p>
+    </main>
+  </body>
 </html>
