@@ -86,12 +86,19 @@ li {
 
 /* ############ 3.1 Button ########### */
 .button--primary {
+  background-color: var(--color-blue-bell);
+  color: var(--color-white);
+  border: none;
+  width: 18.5rem;
+  padding: 1.3rem 2.2rem;
 }
 
 .button--primary:hover {
+  background-color: var(--color-soap);
 }
 
 .button--primary:focus {
+  background-color: var(--color-gray);
 }
 
 /* ############ 4. Typography ########### */
@@ -191,6 +198,9 @@ li {
 
 /* ############ 5.2 New Chat ########### */
 .contacts__new-chat {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
 }
 
 /* ############ 5.3 Chats ########### */
