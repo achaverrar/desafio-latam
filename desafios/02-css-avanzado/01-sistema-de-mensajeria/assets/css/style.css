@@ -258,8 +258,9 @@ li {
   padding: 1em;
 }
 
-.main__image {
+.main__image-container {
   width: 25%;
+  max-width: fit-content;
   border-radius: 10px;
   margin-bottom: 2.5rem;
 }
